@@ -46,11 +46,15 @@
     .row{
         .card{
             position: relative;
+            overflow: hidden;
+            &:hover{
+                .card-img{
+                    transform: scale(1.02);
+                    transition: .4s;
+                }
+            }
             .card-img-overlay{
                 padding: 36px;
-                // .title{
-                //     color: $primary;
-                // }
 
                 .btn{
                     position: absolute;
@@ -68,6 +72,12 @@
                 width: auto;
                 height: 312px;
                 object-fit: cover;
+            }
+            &:hover{
+                .card-img{
+                    transform: scale(1.02);
+                    transition: .4s;
+                }
             }
             .card-img-overlay{
                 padding: 36px;
