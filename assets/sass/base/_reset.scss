@@ -1,0 +1,45 @@
+@use 'colors' as *;
+@use 'typography' as *;
+@use '../partials/variables' as *;
+
+ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+}
+
+.form-control:focus, .form-select:focus{
+    box-shadow: none;
+    border: 1px solid $primary;
+    outline: none;
+}
+
+.form-select:focus{
+    box-shadow: none;
+    border: 1px solid $primary ;
+    outline: none;
+    option{
+        &:hover{
+            background: red !important;
+
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .form-label{
+        font-size: 13px;
+    }
+}
+
+body{
+    // background: #F9F9F9;
+}

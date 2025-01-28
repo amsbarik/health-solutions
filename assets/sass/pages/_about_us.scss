@@ -1,0 +1,12 @@
+@use "../base/" as *;
+@use "../partials/" as *;
+
+
+.about-us{
+     .about-img{
+        width: 100%;
+      //   height: 306px;
+        object-fit: cover;
+        margin-bottom: 24px;
+     }
+}

@@ -1,0 +1,80 @@
+@use "../base/" as *;
+@use "../partials/" as *;
+
+
+.footer{
+    background: $dark;
+    .footer-wrap{
+        color: $light;
+        .logo{
+            height: 5rem;
+        }
+        .mobile{
+            color: $primary;
+            font-size: 1.5rem;
+            font-weight: $semibold;
+        }
+        .social-link{
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            a{color: $primary; margin-right: .75rem;}
+        }
+        .contact{
+            li{margin-top: .5rem; font-size: .875rem;
+            a{color: $light;}
+            }
+        }
+
+        .photo-link{
+            width: 100%;
+        }
+
+        .payment-img{width: 100%;}
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .footer{
+        .footer-wrap{
+            .logo{
+                height: 5rem;
+            }
+            .mobile{
+                font-size: 1rem;
+            }
+            .hour{font-size: .75rem;}
+            .social-link{
+                font-size: 1rem;
+                margin-top: .9rem;
+                a{color: $primary; margin-right: .75rem;}
+            }
+            .contact{
+                li{margin-top: .4rem; font-size: .75rem;}
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer{
+        .footer-wrap{
+            .logo{
+                height: 3.5rem;
+            }
+            .mobile{
+                font-size: .85rem;
+            }
+            .hour{font-size: .65rem; i{display: none;}}
+            .social-link{
+                font-size: .85rem;
+                margin-top: .8rem;
+                a{color: $primary; margin-right: .7rem;}
+            }
+            .contact{
+                li{margin-top: .4rem; font-size: .7rem;}
+            }
+            h5{font-size: 1rem;}
+        }
+    }
+}

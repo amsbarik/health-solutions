@@ -1,0 +1,28 @@
+@use "../base/index" as *;
+@use "../partials/variables" as *;
+
+
+.product-card{
+    height: 100%;
+    transition: .4s;
+    background: $bg-white;
+    border: 1px solid darken($color: $light, $amount: 7);
+    padding: 24px;
+    .product-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+       
+    }
+    .card-body{
+
+        .price-delete{
+            color: darken($color: $light, $amount: 2);
+            // margin-left: 80px;
+            // display: inline-block;
+        }
+    }
+}
+
+
+// media css start 

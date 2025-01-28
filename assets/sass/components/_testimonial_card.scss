@@ -1,0 +1,97 @@
+@use '../base/index' as *;
+@use '../partials/variables' as *;
+
+
+// testimonial card
+.testimonial-card{
+    background: $light;
+    padding: 1.5rem 2.2rem;
+    height: 224px;
+    .quote{
+        background: $primary;
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        left: -2.7rem;
+        top: -2.7rem;
+        rotate: 45deg;
+        padding: 1.7rem 1rem 2rem 3.8rem;
+        i{rotate: -45deg; font-size: 0.875rem; color: $white;}
+    }
+    .user-photo{
+        width: 3.75rem;
+        height: 3.75rem;
+        object-fit: cover;
+    }
+
+    .card-text {
+        height: 6.8rem;
+        overflow-y: auto;
+    
+        /* For Firefox */
+        scrollbar-width: thin; /* Makes the scrollbar thinner */
+        scrollbar-color: $bg-deep transparent; /* Thumb visible, track hidden */
+        transition: .4s;
+        &:hover{
+            scrollbar-color: darken($bg-deep, 6) transparent;
+        }
+
+        &::-webkit-scrollbar {
+            width: 4px; /* Very thin scrollbar */
+        }
+        
+        &::-webkit-scrollbar-track {
+            background: transparent; /* Hides the scrollbar track */
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $bg-deep; /* Color of the scrollbar thumb */
+            border-radius: 10px; /* Rounded corners */
+            &:hover {
+                background: darken($bg-deep, 6) transparent;; /* Darker color on hover */
+            }
+            
+        }
+    }
+
+    
+}
+
+
+@media (max-width:1200px) {
+    .testimonial-card{
+        height: 210px;
+        // .quote{
+        //     background: $primary;
+        //     width: 5rem;
+        //     height: 5rem;
+        //     position: absolute;
+        //     left: -2.7rem;
+        //     top: -2.7rem;
+        //     rotate: 45deg;
+        //     padding: 1.7rem 1rem 2rem 3.8rem;
+        //     i{rotate: -45deg; font-size: 0.875rem; color: $white;}
+        // }
+        .user-photo{
+            width: 3.4rem;
+            height: 3.4rem;
+            margin-top: 2px;
+        }
+    
+        
+    }
+}
+@media (max-width:576px) {
+    .testimonial-card{
+        height: 210px;
+     
+        .user-photo{
+            width: 3rem;
+            height: 3rem;
+            // margin-top: 2px;
+        }
+    
+        
+    }
+}
+

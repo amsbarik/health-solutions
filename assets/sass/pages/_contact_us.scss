@@ -1,0 +1,29 @@
+@use "../base/" as *;
+@use "../partials/" as *;
+
+
+
+// contact 
+.contact{
+    .form-control{
+        padding: 8px;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px dashed darken($color: $light, $amount: 20);
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    // contact 
+.contact{
+    .form-control{
+        padding: 4px;
+        font-size: 13px
+    }
+}
+
+}
+
+

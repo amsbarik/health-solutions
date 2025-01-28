@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <!-- bootstrap cdn css link  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    
+    <!-- custom css link  -->
+     <link rel="stylesheet" href="assets/css/style.min.css">
+
+
+    <title>Product Details</title>
+
+
+</head>
+<body class="bg-im ">
+    
+    <!--Main Navigation start-->
+    <header class="z-3">
+        <!-- Navbar top start-->
+         <div class="container header d-none d-lg-block">
+            <div class=" header-wrap d-flex justify-content-between position-relative">
+
+                <div>
+                    <a class="navbar-brand " href="index.html" >
+                        <img src="assets/img/Health-Solutions-logo.jpg" class="object-fit-cover logo" alt="logo">
+                    </a>
+
+                    
+                </div>
+                <div class="search align-self-center flex-grow-1" >
+                    <form action="" role="search">
+                        <div class="input-group ">
+                            <input type="search" placeholder="Search products..."  aria-label="Search" class="form-control  "  aria-describedby="search-btn">
+                            <button class="btn btn-primary" type="button" >Search</button>
+                        </div>
+                    </form>
+                </div>
+                
+                <ul class="d-flex users mb-0">
+                    <!-- <li class=""><a href="#" class="btn btn-primary">
+                        <div><i class="fa-brands fa-facebook"></i> </div>
+                        <div class="facebook text-start ms-2">Follow us on<br>facebook</div>
+                    </a></li> -->
+                    <li class="ms-3 me-2"><a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class=""><a href="#" class="btn btn-primary"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+    
+             </div>
+        </div>
+         
+        <!-- main categories start -->
+        <nav class="navbar navbar-expand-lg p-0  ">
+            <div class="container">
+
+                <button  class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body overflow-visible">
+    
+                        <!-- main categories  -->
+                        <ul class="navbar-nav main-categories">
+
+                            <li class="nav-item mx-2 ms-lg-auto" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">
+                                <a class="nav-link category-btn " aria-current="page" href="#"> All Categories </a>
+                            </li>
+                            <li class="nav-item mx-2 ms-lg-auto" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">
+                                <a class="nav-link " aria-current="page" href="index.html"> Home </a>
+                            </li>
+                            <li class="nav-item mx-2 ms-lg-auto" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">
+                                <a class="nav-link " aria-current="page" href=""> Shop </a>
+                            </li>
+                            <li class="nav-item mx-2 ms-lg-auto" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">
+                                <a class="nav-link " aria-current="page" href=""> About </a>
+                            </li>
+                            <li class="nav-item mx-2 ms-lg-auto" data-bs-dismiss="offcanvas" data-bs-dismiss="offcanvas">
+                                <a class="nav-link " aria-current="page" href=""> Contact </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar top end-->
+
+        <!-- nav bottom start  -->
+        <nav class="fixed-bottom bg-white nav-bottom" >
+        
+            <div class="container">
+                <div class=" " >
+                    <ul class="d-flex justify-content-between " >
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-sm text-center active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i><span class="d-block">Home</span></a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link nav-link-sm" href="about_us.html"><i class="fa-solid fa-eject"></i><span class="d-block">About Us</span></a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link nav-link-sm " href="product_store.html"><i class="fa-solid fa-bars"></i><span class="d-block">Products</span></a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link nav-link-sm " href="contact_us.html"><i class="fa-solid fa-address-card"></i><span class="d-block">Contact</span></a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link nav-link-sm " href="registration.html"><i class="fa-solid fa-user"></i><span class="d-block">Registration</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav bottom end  -->
+
+    
+    </header>
+    <!--Main Navigation end-->
+ 
+    <!-- main content start -->
+    <main>
+        <!-- ptoduct-details start  -->
+        <section class="ptoduct-details top-margin">
+            <div class="container">
+                <div class="product-details-wrap">
+                    <!-- breadcrumb url  -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Home</a></li>
+                          <li class="breadcrumb-item"><a href="#">Panjabi</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">ELITE Quality Embroidered Panjabi I MP-50</li>
+                        </ol>
+                    </nav>
+
+                    <div class="row row-cols-1 row-cols-md-2">
+
+                        <!-- product-images -->
+                        <div class="col">
+                            <div class="product-images row g-3">
+                                <div class="img-slider col-2" >
+                                    <div class="thum-slider-container overflow-x-hidden py-5">
+                                        <div class="thum-slider-wrapper ">
+                    
+                                            <div class="product-thum-card rounded">
+                                                <img src="assets/img/p1.webp" class="product-thum-img" alt="...">
+                                            </div>
+                                            <div class="product-thum-card rounded">
+                                                <img src="assets/img/p1.webp" class="product-thum-img" alt="...">
+                                            </div>
+                                            <div class="product-thum-card rounded">
+                                                <img src="assets/img/p1.webp" class="product-thum-img" alt="...">
+                                            </div>
+                                            <div class="product-thum-card rounded">
+                                                <img src="assets/img/p1.webp" class="product-thum-img" alt="...">
+                                            </div>
+                                            <div class="product-thum-card rounded">
+                                                <img src="assets/img/p1.webp" class="product-thum-img" alt="...">
+                                            </div>
+                                            <div class="product-thum-card rounded">
+                                                <img src="assets/img/p1.webp" class="product-thum-img" alt="...">
+                                            </div>
+                                            <div class="product-thum-card rounded">
+                                                <img src="assets/img/p1.webp" class="product-thum-img" alt="...">
+                                            </div>
+
+                                        </div>
+
+                                        <button class="prev-btn"><i class="fa-solid fa-angle-up"></i></button>
+                                        <button class="next-btn"><i class="fa-solid fa-angle-down"></i></button>
+                                    </div>
+                                </div>
+
+                                <div class="col-10">
+
+                                    <img src="assets/img/p1.webp" class="rounded product-view-img" alt="...">
+                                   
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- product-info  -->
+                        <div class="col">
+                            <form action="">
+                                <div class="product-info">
+                                    <h1 class="product-title">Blood Pressure 3x Pro elastic band (1 piece)</h1>
+                                    <h2 class="mt-3 price">Tk. 2990 <span class="text-decoration-line-through text-danger">3450</span></h2> 
+    
+                                    <div class="rating">
+                                        0.0 <i class="fa-solid fa-star"></i> | 0 Reviews
+                                    </div>
+    
+                                    <!-- <div class="row color-select">
+                                        <div class="col-auto"><h5>COLOR:</h5></div>
+                                        
+                                        <div class="col-auto color-list d-flex">
+                                            <div class="color-item me-3 rounded active" data-color="Red">
+                                                <img src="asset/img/product1.jpeg" alt="Red" class="color-img rounded object-fit-cover product-thum-img">
+                                            </div>
+                                            <div class="color-item me-3 rounded" data-color="Blue">
+                                                <img src="asset/img/product2.jpeg" alt="Blue" class="color-img rounded object-fit-cover product-thum-img">
+                                            </div>
+                                            <div class="color-item me-3 rounded" data-color="Green">
+                                                <img src="asset/img/product3.jpeg" alt="Green" class="color-img rounded object-fit-cover product-thum-img">
+                                            </div>
+                                        </div>
+                                        <h5 class="color-name p-0 col-auto">Red</h5>
+    
+                                    </div> -->
+    
+                                    <!-- size start  -->
+                                    <!-- <div class="row mt-4">
+    
+                                        <div class="col-auto">
+                                            <h5>SIZE:</h5>
+                                        </div>
+    
+                                        <div class="col-auto size-select " >
+                                            
+                                            <div class="size-list d-flex mt-3">
+                                                <div class="size-item me-3 rounded-circle active" data-qty="12">
+                                                    <span class="size-text">S</span>
+                                                </div>
+                                                <div class="size-item me-3 rounded-circle" data-qty="8">
+                                                    <span class="size-text">M</span>
+                                                </div>
+                                                <div class="size-item me-3 rounded-circle" data-qty="5">
+                                                    <span class="size-text">L</span>
+                                                </div>
+                                                <div class="size-item me-3 rounded-circle" data-qty="3">
+                                                    <span class="size-text">XL</span>
+                                                </div>
+                                                <div class="size-item me-3 rounded-circle" data-qty="3">
+                                                    <span class="size-text">XXL</span>
+                                                </div>
+                                            </div>
+    
+                                            <h6 class="size-qty text-muted mt-3"><span class="available-qty">100</span> available</h6>
+                                        </div>
+                                        
+                                    </div>
+     -->
+
+                                    <!-- qty start  -->
+                                    <div class="row qty-select g-3 mt-5">
+                                        <div class="col-4 me-4 me-xl-5">
+                                            <div class="qty-controls border rounded d-flex align-items-center">
+                                                <div class="btn pro-qty-minus text-dark">-</div>
+                                                <input type="text" class="form-control text-center pro-qty-input mx-1 border-0" value="1" readonly>
+                                                <div class="btn pro-qty-plus text-dark">+</div>
+                                            </div>
+                                        </div>
+    
+                                        <button class="col-5 ms-2 ms-lg-0 col-lg-auto btn btn-white me-4 px-4" type="submit">Add to Card</button> 
+                                        
+                                        
+                                    </div>
+
+
+
+                                    
+
+
+
+
+
+
+                                    <div class="row mt-4">
+                                        <button class="col-5 col-lg-auto btn btn-primary me-4 px-4" type="submit">Order Now</button>
+                                        <button class="col-5 col-lg-auto btn btn-danger px-4" type="submit">Pre Order</button>
+                                    </div>
+    
+                                    <hr>
+                                    <!-- call and share + -->
+                                    <div class="d-flex mt-3 mt-xl-4">
+                                        <a href="tel: +880"><img src="asset/img/call.png" class="call-img mt-3" alt=""></a>
+    
+                                        <div class="ms-4">
+                                            <button type="submit" class="btn p-0 text-muted mt-3 "><i class="fa-regular fa-bookmark me-2"></i>ADD TO WISHLIST</button>
+                                            <div class="share-to d-flex mt-3">
+                                                <small class="text-muted me-3">Share To:</small>
+                                                <ul class="d-flex" style="margin-top: -3px;">
+                                                    <li><button type="submit" class="btn"><i class="fa-brands fa-facebook"></i></button></li>
+                                                    <li><button type="submit" class="btn"><i class="fa-brands fa-whatsapp"></i></button></li>
+                                                    <li><button type="submit" class="btn"><i class="fa-brands fa-facebook-messenger"></i></button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </form>
+                        </div>
+
+                        
+
+                    </div>
+
+                    <!-- description and policy  -->
+                    <div class="product-description mt-xl-5">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="description-tab" data-bs-toggle="pill" data-bs-target="#description" type="button" role="tab" aria-controls="description" aria-selected="true">Description</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="policy-tab" data-bs-toggle="pill" data-bs-target="#policy" type="button" role="tab" aria-controls="policy" aria-selected="false">Delivery Policy</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content mt-4" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab" tabindex="0">
+                                <h6 >About the Category</h6>
+                                <p class="text">Celebrate grandeur, color, and festivity with Manfare’s Elite Quality Panjabi. With the rise in contemporary clothing, Manfare has undoubtedly been at the forefront of change. We focus on quality over price, so you can indulge in the comfort and grace of this elegant piece of outfit. Manfare’s Elite Panjabi Collection is a fusion of traditional elements with contemporary design. So, don’t choose between comfort and premium; select from Manfare’s Elite Panjabi.
+                                <br>
+                                <br>
+                                    Be the focus of every occasion with Manfare!</p>
+
+                                <h6 class="mt-4">Product Specifications</h6>
+                                <ul class="text">
+                                    <li>Handcuff Style : The designs are perfectly knitted for an outlandish style.</li>
+                                    <li>100% Organic Cotton : Mostly referred to as softer and safer for skin.</li>
+                                    <li>Embroidery Thread : The threads are procured from “Well Branded Yarn” for their superior tensile strength.</li>
+                                    <li>Premium Snap Button : Perfectly hold the premium quality of the design</li>
+                                    <li>Breathable : This type of fabric allows moisture removal from the body and absorbs liquid.</li>
+                                    <li>Quality Control : To identify if each Panjabi is up to the Elite Quality Standard.</li>
+                                    <li>Unique Design : Inspired by the contemporary traditional elements for distinctive design.</li>
+                                </ul>
+
+                                <h6>About the Brand</h6>
+                                <p class="text">Manfare has become locally renowned for the classic collection of men’s clothing with a touch and feel of enhanced culture and heritage. As a lifestyle brand MANFARE aims to serve the customers with the quality one deserves. Since 2017, Manfare has been serving the fashion industry with pride and mastered the art of making men’s wardrobe a reflection of their personality.
+                                <br>
+                                <br>
+                                    Be a Statement out of the Ordinary! Welcome to the world of Manfare Clothing!
+                                    
+                                    </p>
+                            </div>
+                            <div class="tab-pane fade" id="policy" role="tabpanel" aria-labelledby="policy-tab" tabindex="0">
+                                <p class="text">
+                                    ঢাকা সিটি -হোম ডেলিভারী -৭০ টাকা
+                                    ঢাকা সিটি’র ভেতরে অর্থাৎ ঢাকা সিটি কর্পোরেশনের মধ্যে যে এলাকাগুলো রয়েছে সেই এলাকাগুলোতে সম্পূর্ণ ক্যাশ অন ডেলিভারি-তে ড্রেস ডেলিভারি করা হয়।
+                                    অর্থাৎ একজন ক্রেতা কোন প্রোডাক্ট অর্ডার করার পর প্রোডাক্টটি হাতে পেয়ে ডেলিভারিম্যানের কাছে প্রোডাক্টের মূল্য পরিশোধ করতে পারবেন।
+                                    <br>
+                                    <br>
+                                    ঢাকার বাইরে -সারা বাংলাদেশ- হোম ডেলিভারি অথবা কুরিয়ার ডেলিভেরী -১৫০ টাকা
+                                    ঢাকার বাইরের অর্ডারের ক্ষেত্রে যে এলাকাসমূহতে কন্ডিশনে কুরিয়ার যায় সেই ক্ষেত্রে শুধুমাত্র ডেলিভারি চার্জ এডভান্স করে অর্ডার করতে হয়।
+                                    পরবর্তীতে কুরিয়ার থেকে প্রোডাক্ট সংগ্রহের সময় শুধুমাত্র প্রোডাক্টের মূল্য পরিশোধ করে ক্রেতা তার প্রোডাক্টটি সংগ্রহ করতে পারবেন।
+                                    ঢাকার বাইরে হোম ডেলিভারির সুযোগ সাধারণত থানা সদরগুলোতে পাওয়া যায় । কুরিয়ারের ডেলিভারির সময় থেকে , হোম ডেলিভারিতে একটু বেশী সময় প্রয়োজন হয়, ৩-৫ দিন
+                                    ঢাকার বাইরে হোম ডেলিভারির ক্ষেত্রে শুধুমাত্র ডেলিভারি চার্জ টা এডভান্স পেমেন্ট করতে হয়
+                                    বাকী টাকা ক্যাশ অন ডেলিভারিতে অর্থাৎ প্রোডাক্ট রিসিভ করার সময় ডেলিভারিম্যানের কাছে টাকা দিয়ে প্রোডাক্ট রিসিভ করতে পারবেন।
+                                </p>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ptoduct-details end  -->
+
+
+
+
+    </main>
+    <!-- main content end -->
+
+
+
+
+
+    <!-- footer start  -->
+    <footer class="footer py-4 mt-5">
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="row mt-2 g-4 row-cols-2 row-cols-lg-4 mb-4">
+                    
+                    <div class="col">
+                        <h5>About Us</h5>
+                        <ul class="contact">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Brands</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h5>Help Center</h5>
+                        <ul class="contact mt-3">
+                           <li><a href="#">FAQ</a></li>
+                           <li><a href="#">Payments Securtiy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h5>Terms and Condition</h5>
+                        <ul class="contact mt-3">
+                            <li><a href="#"> Terms and Conditions</a></li>
+                            <li><a href="#"> Privacy Policy</a></li>
+                            <li><a href="#"> Cookie Policy</a></li>
+                         </ul>
+                    </div>
+                    <div class="col">
+                        <h5>Newsletter</h5>
+                        <p class="text-white card-text">Subscribe for get latest news and update</p>
+                        <div class="d-flex mt-2">
+                            <div class="me-2">
+                                <input type="email" class="form-control" id="subscribe" placeholder="Enter your email">
+                            </div>
+                            <div><button class="btn px-3 btn-primary">Subscribe</button></div>
+                        </div>
+                        <ul class="social-link d-flex mt-3">
+                            <li><a href="#"><i class="fa-brands fa-facebook"></i> </a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i> </a></li>
+                            <li><a href="#"><i class="fa-brands fa-instagram"></i> </a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i> </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr>
+                <small class="text-center d-block" >All rights reserved &copy; 2025 | Healthcare Solutions</small>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- boostrap cdn js link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- boostrap js link  -->
+    <!-- <script src="assets/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
+     
+    <!-- custom js link  -->
+    <script src="assets/js/app.js"></script>
+
+
+</body>
+</html>

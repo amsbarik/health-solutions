@@ -1,0 +1,70 @@
+@use '../base/index' as *;
+@use '../partials/variables' as *;
+
+
+// testimonial 3 card sliders css 
+.three-card-slider-container {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+.three-card-slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.three-card {
+    flex: 0 0 calc(33.33% - 22px);
+    max-width: calc(33.33% - 22px);
+    margin: 0 12px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1400px) {
+    .three-card {
+        flex: 0 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    .three-card {
+        flex: 0 0 calc(100% - 10px);
+        max-width: calc(100% - 10px);
+    }
+}
+
+.three-card-slider-container .prev-btn,
+.three-card-slider-container .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $primary;
+    color: $white;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    line-height: 0px;
+  
+    span{
+        margin-top: -2px;
+        display: block;
+    }
+}
+
+.three-card-slider-container .prev-btn {
+    left: 0px;
+    span{margin-left: -2px;}
+}
+
+.three-card-slider-container .next-btn {
+    right: 0px;
+    span{margin-right: -2px;}
+}
+
+

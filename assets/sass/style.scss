@@ -1,0 +1,96 @@
+
+@use "base" as *;
+@use "components" as *;
+@use "layouts" as *;
+@use "pages" as *;
+@use "partials" as *;
+
+
+
+
+// top slide css start 
+.top-slider{
+    // background: $bg-white;
+    margin-top: 30px;
+    .top-slider-wrap{
+        .slide-img{
+            // height: 40rem;
+            height: auto;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .carousel-inner{
+            .carousel-item{
+                position: relative;
+                .carousel-caption {
+                    position: absolute;
+                    right: 15%;
+                    bottom: 50%;
+                    transform: translateY(50%);
+                    left: 15%;
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+                    text-align: center;
+
+                    .heading, .sub-heading, .text {color: $white;}
+        
+                }
+            }
+        }
+
+    }
+}
+
+.offer-banner{
+    .row{
+        .card{
+            position: relative;
+            .card-img-overlay{
+                padding: 36px;
+                // .title{
+                //     color: $primary;
+                // }
+
+                .btn{
+                    position: absolute;
+                    bottom: 36px;
+                }
+            }
+        }
+    }
+}
+
+.category{
+    .row{
+        .card{
+            .card-img{
+                width: auto;
+                height: 312px;
+                object-fit: cover;
+            }
+            .card-img-overlay{
+                padding: 36px;
+                // .title{
+                //     color: $primary;
+                // }
+
+                .btn{
+                    margin-top: 8px;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+.banner{
+    .banner-img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+// boostrap css link 
+// @import url(../node_modules/bootstrap/dist/css/bootstrap.css);
+// @import url(../node_modules/bootstrap/scss/bootstrap.scss);
